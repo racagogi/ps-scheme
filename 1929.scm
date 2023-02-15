@@ -1,0 +1,15 @@
+(define (prinme? n count maxc)
+  (if (> count maxc)
+    (begin (display n) (newline))
+    (if (not (= (modulo n count) 0))
+        (if (= count 2)
+          (prinme? n (+ count 1) maxc)
+          (prinme? n (+ count 2) maxc)))))
+
+(define (iter m n)
+  (if (<= m n)
+    (begin
+      (if (and (not (= m 1)) (or (odd? m) (= m 2)))
+          (prinme? m 2 (sqrt m)))
+      (iter (+ m 1) n))))
+(iter (read) (read))

@@ -1,0 +1,7 @@
+(define n (read))
+(define m (read))
+(define k (read))
+(display (+ (min m k)
+            (min (- n m)
+                 (- n k))))
+(newline)

@@ -1,0 +1,7 @@
+(define n1 (read))
+(define n2 (read))
+(define n3 (read))
+(display (floor (- (/ (* (+ n1 1)
+                         (+ n2 1))
+                      (+ n3 1)) 1)))
+(newline)

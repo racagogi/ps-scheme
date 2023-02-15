@@ -1,0 +1,6 @@
+(define (iter n acc)
+  (if (> n 0)
+    (iter (- n 1) (+ acc (read)))
+    acc))
+(display (iter (read) 0))
+(newline)

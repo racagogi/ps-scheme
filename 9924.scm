@@ -1,0 +1,10 @@
+(define a (read))
+(define b (read))
+(define (Euclidean a b count)
+  (cond ((= a b) count)
+        (else (Euclidean
+                (- (max a b) (min a b))
+                (min a b)
+                (+ count 1)))))
+(display (Euclidean a b 0))
+(newline)

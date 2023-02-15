@@ -1,0 +1,30 @@
+(define n (read))
+(define k (read))
+(define (init count l)
+  (if (<= count n)
+    (init (+ count 1) (cons count l))
+    (reverse l)))
+(define countlist (init 1 '()))
+
+(define (요세푸스 l ans count)
+  (if (= (length l) 0)
+      (reverse ans)
+      (if (= (modulo count k) 0)
+          (요세푸스 (cdr l) (cons (car l) ans) (+ count 1))
+          (요세푸스 (reverse (cons (car l)
+                                   (reverse (cdr l))))
+                      ans
+                      (+ count 1)))))
+
+(define (printlist l n)
+  (if (= n 1)
+      (begin
+        (display (car l))
+        (display ">\n"))
+      (begin (display (car l))
+             (display ", ")
+             (printlist (cdr l) (- n 1)))))
+
+(define result (요세푸스 countlist '() 1))
+(display "<")
+(printlist result (length result))

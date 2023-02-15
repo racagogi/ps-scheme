@@ -1,0 +1,12 @@
+(define len (read))
+(define str (string->list (symbol->string (read))))
+(define (hassing n acc)
+  (if (< n len)
+    (hassing (+ n 1)
+             (modulo (+ acc
+                        (* (expt 31 n)
+                           (- (char->integer (list-ref str n)) 96)))
+                     1234567891))
+    acc))
+(display (hassing 0 0))
+(newline)

@@ -1,0 +1,8 @@
+(define Soongsil (read))
+(define Korea (read))
+(define Hanyang (read))
+(define 기열 (min Soongsil Korea Hanyang))
+(cond ((>= (+ Soongsil Korea Hanyang) 100) (display "OK\n"))
+      ((= Soongsil 기열)(display "Soongsil\n"))
+      ((= Korea 기열)(display "Korea\n"))
+      ((= Hanyang 기열)(display "Hanyang\n")))

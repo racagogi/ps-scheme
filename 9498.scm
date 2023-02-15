@@ -1,0 +1,11 @@
+(define grade (read))
+(cond
+  ((and (<= grade 100) (>= grade 90))
+   (display "A")(newline))
+  ((and (<= grade 89) (>= grade 80))
+   (display "B")(newline))
+  ((and (<= grade 79) (>= grade 70))
+   (display "C")(newline))
+  ((and (<= grade 69) (>= grade 60))
+   (display "D")(newline))
+  (else (display "F")(newline)))

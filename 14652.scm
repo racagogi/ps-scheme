@@ -1,0 +1,7 @@
+(define n (read))
+(define m (read))
+(define k (read))
+(display (quotient k m))
+(newline)
+(display (modulo k m))
+(newline)

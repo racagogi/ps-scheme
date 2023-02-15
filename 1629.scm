@@ -1,0 +1,15 @@
+(define a (read))
+(define b (read))
+(define c (read))
+(define (big-mul mul n acc)
+  (if (= n 0)
+      acc
+      (if (even? n)
+          (big-mul (modulo (* mul mul) c)
+                   (quotient n 2)
+                   acc)
+          (big-mul mul
+                   (- n 1)
+                   (modulo (* mul acc) c)))))
+(display (big-mul a b 1))
+(newline)

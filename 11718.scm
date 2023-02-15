@@ -1,0 +1,7 @@
+(define (iter)
+  (define string (read))
+  (if (not (eof-object? string))
+    (begin (display string)
+           (newline)
+           (iter))))
+(iter)

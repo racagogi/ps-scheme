@@ -1,0 +1,12 @@
+(define (iter counter)
+  (if (>= counter 1)
+      (begin (copy)
+          (iter (- counter 1)))))
+(define (copy)
+  ( define n (read))
+  (display n)
+  (display " ")
+  (display n)
+  (newline))
+
+(iter (read))

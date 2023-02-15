@@ -1,0 +1,20 @@
+(define birth-year (read))
+(define birth-month (read))
+(define birth-day (read))
+(define now-year (read))
+(define now-month (read))
+(define now-day (read))
+
+(define over-birthday
+  (or (< birth-month now-month)
+      (and (= birth-month now-month)
+           (<= birth-day now-day))))
+
+(display (cond ((= birth-year now-year) 0)
+               (over-birthday (- now-year birth-year))
+               (else (- now-year birth-year 1))))
+(newline)
+(display (+ 1 (- now-year birth-year)))
+(newline)
+(display (+ 0 (- now-year birth-year)))
+(newline)

@@ -1,0 +1,6 @@
+(display "         ,r'\"7\n")
+(display "r`-_   ,'  ,/\n")
+(display " \\. \". L_r'\n")
+(display "   `~\\/\n")
+(display "      |\n")
+(display "      |\n")

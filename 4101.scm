@@ -1,0 +1,7 @@
+(define (cmp-iter)
+  (define a (read))
+  (define b (read))
+  (cond ((not (and (= a 0) (= b 0)))
+         (cond ((> a b) (display "Yes\n")) (else (display "No\n")))
+         (cmp-iter))))
+(cmp-iter)

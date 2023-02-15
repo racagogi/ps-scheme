@@ -1,0 +1,5 @@
+(define (iter n)
+  (if (> n 0)
+    (begin (display "SciComLove\n")
+           (iter (- n 1)))))
+(iter (read))

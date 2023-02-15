@@ -1,0 +1,5 @@
+(define a (read))
+(define b (read))
+(define c (read))
+(define d (read))
+(print (abs (- (+ a b c d) (* 2 (+ (min a b c d) (max a b c d))))))

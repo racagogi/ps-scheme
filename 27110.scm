@@ -1,0 +1,5 @@
+(define n (read))
+(display (+ (min (read) n)
+            (min (read) n)
+            (min (read) n)))
+(newline)

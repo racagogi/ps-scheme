@@ -1,0 +1,10 @@
+(define month (read))
+(define day (read))
+(display
+  (cond ((and (= month 2)
+              (= day 18)) "Special\n")
+        ((or (> month 2)
+             (and (= month 2)
+                  (> day 18)))
+         "After\n")
+        (else "Before\n")))

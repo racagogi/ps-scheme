@@ -1,0 +1,7 @@
+(define k (read))
+(define w (read))
+(define m (read))
+(cond ((= 0 (modulo (- w k) m))
+       (display (quotient (- w k) m)))
+      (else (display (+ 1 (quotient (- w k) m)))))
+(newline)

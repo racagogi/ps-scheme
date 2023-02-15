@@ -1,0 +1,5 @@
+(define m (* (read) (read)))
+(define p (* (read) (read)))
+(cond ((= m p) (display "E\n"))
+      ((> m p) (display "M\n"))
+      (else (display "P\n")))

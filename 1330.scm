@@ -1,0 +1,5 @@
+(define a (read))
+(define b (read))
+(cond ((< a b) (display "<")(newline))
+      ((< b a) (display ">")(newline))
+      (else (display "==")(newline)))

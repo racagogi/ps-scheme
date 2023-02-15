@@ -1,0 +1,13 @@
+(define n (- (read) 1))
+(define c (modulo n 8))
+(define r (quotient n 8))
+
+(cond ((= c 0) (display "a"))
+      ((= c 1) (display "b"))
+      ((= c 2) (display "c"))
+      ((= c 3) (display "d"))
+      ((= c 4) (display "e"))
+      ((= c 5) (display "f"))
+      ((= c 6) (display "g"))
+      ((= c 7) (display "h")))
+(print (+ 1 r))

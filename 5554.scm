@@ -1,0 +1,5 @@
+(define time (+ (read) (read) (read) (read)))
+(display (quotient time 60))
+(newline)
+(display (modulo time 60))
+(newline)

@@ -1,0 +1,8 @@
+(define a (read))
+(define b (read))
+(define c (read))
+(define max-kin (max a b c))
+(display (+ (abs (- a max-kin))
+            (abs (- b max-kin))
+            (abs (- c max-kin))))
+(newline)

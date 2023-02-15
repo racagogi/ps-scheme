@@ -1,0 +1,5 @@
+(define a (read))
+(define b (read))
+(if (or (< a b)(= (modulo (+ a b) 2) 1))
+    (print -1)
+    (print (quotient (+ a b) 2) " " (quotient (- a b) 2)))

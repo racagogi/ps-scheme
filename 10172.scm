@@ -1,0 +1,5 @@
+(display "|\\_/|\n")
+(display "|q p|   /}\n")
+(display "( 0 )\"\"\"\\\n")
+(display "|\"^\"`    |\n")
+(display "||_/=\\\\__|\n")

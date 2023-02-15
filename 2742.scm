@@ -1,0 +1,6 @@
+(define n (read))
+(define (print-num n)
+  (cond ((<= 1 n) (display n)
+                      (newline)
+                      (print-num (- n 1)))))
+(print-num n)

@@ -1,0 +1,17 @@
+(define (display-heart)
+  (display " @@@   @@@ \n")
+  (display "@   @ @   @\n")
+  (display "@    @    @\n")
+  (display "@         @\n")
+  (display " @       @ \n")
+  (display "  @     @  \n")
+  (display "   @   @   \n")
+  (display "    @ @    \n")
+  (display "     @     \n"))
+
+(define (iter f n)
+  (if (> n 0)
+    (begin
+      (f)
+      (iter f (- n 1)))))
+(iter display-heart (read))

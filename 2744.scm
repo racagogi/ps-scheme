@@ -1,0 +1,10 @@
+(define str (string->list (symbol->string (read))))
+(define (iter s)
+  (cond ((not (eqv? s '()))
+         (cond ((char-upper-case? (car s))
+                (display (char-downcase (car s))))
+               (else (display (char-upcase (car s)))))
+         (iter (cdr s)))))
+
+(iter str)
+(newline)

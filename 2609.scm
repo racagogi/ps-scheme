@@ -1,0 +1,6 @@
+(define a (read))
+(define b (read))
+(display (gcd a b))
+(newline)
+(display (lcm a b))
+(newline)

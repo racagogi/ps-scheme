@@ -1,0 +1,6 @@
+(display"SHIP NAME      CLASS          DEPLOYMENT IN SERVICE\n")
+(display"N2 Bomber      Heavy Fighter  Limited    21        \n")
+(display"J-Type 327     Light Combat   Unlimited  1         \n")
+(display"NX Cruiser     Medium Fighter Limited    18        \n")
+(display"N1 Starfighter Medium Fighter Unlimited  25        \n")
+(display"Royal Cruiser  Light Combat   Limited    4         \n")

@@ -1,0 +1,11 @@
+(define (make8 n)
+  (if (> n 40)
+      (quotient n 5)
+      8))
+
+(display (+ (make8 (read))
+            (make8 (read))
+            (make8 (read))
+            (make8 (read))
+            (make8 (read))))
+(newline)

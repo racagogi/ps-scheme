@@ -1,0 +1,8 @@
+(define (add-iter)
+  (define a (read))
+  (define b (read))
+  (cond ((and (not (= a 0)) (not (= b 0)))
+         (display (+ a b))
+         (newline)
+         (add-iter))))
+(add-iter)

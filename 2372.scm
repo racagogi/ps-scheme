@@ -1,0 +1,7 @@
+(display "Animal      Count\n")
+(display "-----------------")
+(display "Chickens      100")
+(display "Clydesdales     5")
+(display "Cows           40")
+(display "Goats          22")
+(display "Steers          2")

@@ -1,0 +1,7 @@
+(define schoarship (read))
+(define tax1 (/ (* schoarship 22) 100))
+(define tax2 (/ (* (/ (* schoarship 20) 100) 22) 100))
+(display (round (- schoarship tax1)))
+(display " ")
+(display (round (- schoarship tax2)))
+(newline)

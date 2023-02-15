@@ -1,0 +1,8 @@
+(define (add-iter)
+  (define a (read))
+  (define b (read))
+  (cond ((and (not (eof-object? a)) (not (eof-object? b)))
+         (display (+ a b))
+         (newline)
+         (add-iter))))
+(add-iter)

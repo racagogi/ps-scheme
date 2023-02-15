@@ -1,0 +1,5 @@
+(define a (read))
+(define b (read))
+(if (or (= a 1) (= b 1))
+  (print (* a b))
+  (print (- (* (+ a b) 2) 4)))

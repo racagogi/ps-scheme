@@ -1,0 +1,8 @@
+(define bill (read))
+(define (iter n acc)
+  (if (> n 0)
+    (iter (- n 1) (+ acc (* (read) (read))))
+    acc))
+(if (= bill (iter (read) 0))
+  (display "Yes\n")
+  (display "No\n"))

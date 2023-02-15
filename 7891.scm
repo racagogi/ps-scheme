@@ -1,0 +1,6 @@
+(define n (read))
+(define (iter n)
+  (if (> n 0)
+    (begin (print (+ (read) (read)))
+           (iter (- n 1)))))
+(iter n)

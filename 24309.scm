@@ -1,0 +1,5 @@
+(define a (read))
+(define b (read))
+(define c (read))
+(display (quotient (- b c ) a))
+(newline)

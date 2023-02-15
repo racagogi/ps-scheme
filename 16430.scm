@@ -1,0 +1,6 @@
+(define a (read))
+(define b (read))
+(display (- b a))
+(display " ")
+(display b)
+(newline)

@@ -1,0 +1,6 @@
+(define n (read))
+(define (sum n acc)
+  (cond ((= n 0) acc)
+        (else (sum (- n 1) (+ acc n)))))
+(display (sum n 0))
+(newline)

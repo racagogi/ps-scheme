@@ -1,0 +1,6 @@
+(define a (read))
+(define b (read))
+(define c (read))
+(display (cond ((>= b c) -1)
+               (else (+ 1 (quotient a (- c b))))))
+(newline)

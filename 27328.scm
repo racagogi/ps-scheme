@@ -1,0 +1,5 @@
+(define a (read))
+(define b (read))
+(cond ((< a b) (display "-1\n"))
+      ((= a b) (display "0\n"))
+      (else (display "1\n")))

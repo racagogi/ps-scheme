@@ -1,0 +1,12 @@
+(define (cmp-area)
+  (define TelecomParisTech (* (read) (read)))
+  (define Eurecom (* (read) (read)))
+  (cond ((= TelecomParisTech Eurecom) (display "Tie\n"))
+        ((> TelecomParisTech Eurecom) (display "TelecomParisTech\n"))
+        (else (display "Eurecom\n"))))
+
+(define (iter n)
+  (if (> n 0)
+    (begin (cmp-area)
+           (iter (- n 1)))))
+(iter (read))

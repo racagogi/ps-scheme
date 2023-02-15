@@ -1,0 +1,6 @@
+(define t (read))
+(define 5len (quotient t 5))
+(if (= 0(modulo t 5))
+    (display 5len)
+    (display (+ 1 5len)))
+(newline)

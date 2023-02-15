@@ -1,0 +1,6 @@
+(define t (read))
+(define s (= (read) 1))
+(cond ((and (<= t 16)
+            (>= t 12)
+            (not s)) (display "320\n"))
+      (else (display "280\n")))

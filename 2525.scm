@@ -1,0 +1,11 @@
+(define hour (read))
+(define minit (read))
+(define cook-time (read))
+(define cook-minit (remainder (+ cook-time minit) 60))
+(display (modulo (+ hour
+                    (quotient (+ cook-time minit)
+                              60))
+                 24))
+(display " ")
+(display cook-minit)
+(newline)

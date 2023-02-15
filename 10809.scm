@@ -1,0 +1,21 @@
+(define count (make-vector 26 -1))
+(define (vector-print n)
+  (if (< n 25)
+    (begin (display (vector-ref count n))
+           (display " ")
+           (vector-print (+ n 1)))
+    (begin (display (vector-ref count n))
+           (newline))))
+(define (iter n)
+  (define (position-set n)
+    (if (= -1 (vector-ref count (- alphabet
+                                 (char->integer #\a))))
+        (vector-set! count (- alphabet
+                              (char->integer #\a)) n)))
+  (define alphabet (char->integer (read-char)))
+  (if (and (<= alphabet 122) (>= alphabet 97))
+    (begin (position-set n)
+     (iter (+ n 1)))))
+
+(iter 0)
+(vector-print 0)

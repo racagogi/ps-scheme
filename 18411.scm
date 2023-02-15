@@ -1,0 +1,5 @@
+(define a (read))
+(define b (read))
+(define c (read))
+(display (+ a b c (- (min a b c))))
+(newline)

@@ -1,0 +1,11 @@
+(define ban (read))
+(define (illegal n)
+  (if (= ban n)
+    1
+    0))
+(display (+ (illegal (read))
+            (illegal (read))
+            (illegal (read))
+            (illegal (read))
+            (illegal (read))))
+(newline)

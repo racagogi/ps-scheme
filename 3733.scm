@@ -1,0 +1,10 @@
+(define (share-iter)
+  (define n (read))
+  (define s (read))
+  (cond ((and (not (eof-object? n))
+              (not (eof-object? s)))
+         (display (quotient s (+ n 1)))
+         (newline)
+         (share-iter))))
+
+(share-iter)

@@ -1,0 +1,6 @@
+(define s (read))
+(define k (read))
+(define n (quotient s k))
+(display (* (expt (+ n 1) (modulo s k))
+            (expt n (- k (modulo s k)))))
+(newline)

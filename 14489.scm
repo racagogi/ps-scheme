@@ -1,0 +1,5 @@
+(define cash (+ (read) (read)))
+(define chicken2 (* (read) 2))
+(if (>= (- cash chicken2) 0)
+  (print (- cash chicken2))
+  (print cash))

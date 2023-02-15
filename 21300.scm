@@ -1,0 +1,7 @@
+(display (* 5 (+ (read)
+                 (read)
+                 (read)
+                 (read)
+                 (read)
+                 (read))))
+(newline)

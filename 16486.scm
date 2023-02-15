@@ -1,0 +1,5 @@
+(define d1 (read))
+(define d2 (read))
+(display (+ (* 2 d1)
+            (* 3.141592 d2 2)))
+(newline)

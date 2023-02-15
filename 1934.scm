@@ -1,0 +1,6 @@
+(define (iter n)
+  (if (> n 0)
+    (begin (display (lcm (read) (read)))
+           (newline)
+           (iter (- n 1)))))
+(iter (read))

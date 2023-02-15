@@ -1,0 +1,6 @@
+(define a (read))
+(define b (read))
+(define defense (- (* 100 a) (* a  b)))
+(if (>= defense 10000)
+  (display "0\n")
+  (display "1\n"))

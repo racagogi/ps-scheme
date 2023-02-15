@@ -1,0 +1,5 @@
+(define n (read))
+(cond ((= (modulo n 10)
+          (quotient n 10))
+       (display "1\n"))
+      (else (display "0\n")))

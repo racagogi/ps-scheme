@@ -1,0 +1,18 @@
+(define hour (read))
+(define minit (read))
+(cond
+  ((>= minit 45)
+   (display hour)
+   (display " ")
+   (display (- minit 45))
+   (newline))
+  ((and (< minit 45) (not (= hour 0)))
+   (display (- hour 1))
+   (display " ")
+   (display (+ minit 15))
+   (newline))
+  (else
+   (display 23)
+   (display " ")
+   (display (+ minit 15))
+   (newline)))

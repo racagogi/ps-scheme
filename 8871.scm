@@ -1,0 +1,5 @@
+(define n (read))
+(display (* 2 (+ n 1)))
+(display " ")
+(display (* 3 (+ n 1)))
+(newline)

@@ -1,0 +1,6 @@
+(define n (read))
+(define (factorial n acc)
+  (cond ((= n 0) acc)
+        (else (factorial (- n 1) (* acc n)))))
+(display (factorial n 1))
+(newline)
