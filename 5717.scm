@@ -1,0 +1,8 @@
+(define (iter)
+  (define a (read))
+  (define b (read))
+  (if (not (and (= a 0)
+                (= b 0)))
+    (begin (print (+ a b))
+           (iter))))
+(iter)
