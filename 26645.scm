@@ -1,0 +1,5 @@
+(define lv (read))
+(cond ((< lv 206) (print 1))
+      ((< lv 218) (print 2))
+      ((< lv 229) (print 3))
+      (else (print 4)))

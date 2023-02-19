@@ -1,0 +1,6 @@
+(define n (read))
+(define (iter acc mod-n)
+  (if (< mod-n 10)
+      (print (+ acc (expt mod-n 5)))
+      (iter (+ acc (expt (modulo mod-n 10) 5)) (quotient mod-n 10))))
+(iter 0 n)
