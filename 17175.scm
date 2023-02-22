@@ -1,0 +1,6 @@
+(define n (read))
+(define (fin n prev post)
+  (cond ((= n 1) (print post))
+        (else (fin (- n 1) post (modulo (+ 1 prev post) 1000000007)))))
+(cond ((= n 0) (print 1))
+      (else (fin n 1 1)))
