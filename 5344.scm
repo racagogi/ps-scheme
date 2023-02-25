@@ -1,0 +1,7 @@
+(define (print-gcd)
+  (print (gcd (read) (read))))
+(define (iter count)
+  (if (> count 0)
+    (begin (print-gcd)
+           (iter (- count 1)))))
+(iter (read))
