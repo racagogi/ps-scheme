@@ -1,0 +1,5 @@
+(let ((short-name (symbol->string (read))))
+  (cond ((equal? short-name "NLCS") (print "North London Collegiate School"))
+        ((equal? short-name "BHA") (print "Branksome Hall Asia"))
+        ((equal? short-name "KIS") (print "Korea International School"))
+        ((equal? short-name "SJA") (print "St. Johnsbury Academy"))))
