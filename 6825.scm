@@ -1,0 +1,6 @@
+(letrec* ((weight (read))
+          (height (read))
+          (bmi (/ weight (* height height))))
+  (cond ((> bmi 25) (print "Overweight"))
+        ((> bmi 18.5)(print "Normal weight"))
+        (else (print "Underweight"))))
