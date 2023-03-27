@@ -1,0 +1,8 @@
+(define N (read))
+(define (iter n acc)
+  (if (> n 0)
+    (iter (- n 1) (+ acc (read)))
+    (if (> (/ N 2) acc)
+      (print "Junhee is not cute!")
+      (print "Junhee is cute!"))))
+(iter N 0)
