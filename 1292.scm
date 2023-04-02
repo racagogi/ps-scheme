@@ -1,0 +1,13 @@
+(define dp (make-vector 1002 0))
+(define (iter count acc acc-time)
+ (if (< count 1002)
+     (if (> acc-time 0)
+       (begin (vector-set! dp count (+ acc (vector-ref dp (- count 1))))
+              (iter (+ count 1) acc (- acc-time 1)))
+       (begin (vector-set! dp count (+ acc 1 (vector-ref dp (- count 1))))
+        (iter (+ count 1) (+ acc 1) acc)))))
+
+(iter 1 1 1)
+(let ((a (read))
+      (b (read)))
+ (print (- (vector-ref dp b) (vector-ref dp (- a 1)))))
