@@ -1,0 +1,5 @@
+(let ((a (+ (* 3 (read)) (read)))
+      (b (+ (* 3 (read)) (read))))
+ (cond ((> a b) (print 1 " " (- a b)))
+       ((< a b) (print 2 " " (- b a)))
+       (else (print "NO SCORE"))))
