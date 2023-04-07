@@ -1,0 +1,7 @@
+(import (chicken io))
+(define (iter)
+ (let ((e (read-line)))
+  (if (not (eof-object? e))
+      (begin (print e)
+             (iter)))))
+(iter)
