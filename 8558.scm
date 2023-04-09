@@ -1,0 +1,7 @@
+(let ((a (read)))
+ (cond ((= a 0) (print 1))
+       ((= a 1) (print 1))
+       ((= a 2) (print 2))
+       ((= a 3) (print 6))
+       ((= a 4) (print 4))
+       (else (print 0))))
