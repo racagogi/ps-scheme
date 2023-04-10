@@ -1,0 +1,6 @@
+(let* ((a (read))
+       (b (read))
+       (m (modulo (+ a b ) 12)))
+ (if (= m 0)
+  (print 12)
+  (print m)))
