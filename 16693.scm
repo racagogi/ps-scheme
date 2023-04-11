@@ -1,0 +1,7 @@
+(let ((a (read))
+      (b (read))
+      (c (read))
+      (d (read)))
+ (if (> (/ a b) (/ (* c c 3.1415926535898) d))
+  (print "Slice of pizza")
+  (print "Whole pizza")))
