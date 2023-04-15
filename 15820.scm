@@ -1,0 +1,22 @@
+(define s1 (read))
+(define s2 (read))
+
+(define (system n)
+  (if (> n 0)
+    (if (= (read) (read))
+      (system (- n 1))
+      #f)
+    #t))
+
+(define (sample n)
+  (if (> n 0)
+    (if (= (read) (read))
+      (sample (- n 1))
+      #f)
+    #t))
+
+(if (sample s1)
+  (if (system s2)
+    (print "Accepted")
+    (print "Why Wrong!!!"))
+  (print "Wrong Answer"))
