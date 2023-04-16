@@ -1,0 +1,12 @@
+(define (candy-cal g c e)
+  (if (>= c e)
+    (print 0)
+    (cond ((= g 1) (print (* 1 (- e c))))
+          ((= g 2) (print (* 3 (- e c))))
+          ((= g 3) (print (* 5 (- e c)))))))
+
+(define (iter n)
+  (if (> n 0)
+    (begin (candy-cal (read) (read) (read))
+           (iter (- n 1)))))
+(iter (read))
