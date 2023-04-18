@@ -1,0 +1,5 @@
+(let ((a (read))
+      (b (read)))
+  (if (or (even? a) (even? b))
+    (print 0)
+    (print (min a b))))
