@@ -1,0 +1,6 @@
+(define (iter acc)
+  (let ((a (read)))
+    (if (not (= -1 a))
+      (iter (+ acc a))
+      (print acc))))
+(iter 0)

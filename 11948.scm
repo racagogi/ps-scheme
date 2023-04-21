@@ -1,0 +1,7 @@
+(let ((a (read))
+      (b (read))
+      (c (read))
+      (d (read))
+      (e (read))
+      (f (read)))
+  (print (+ a b c d e f (- (min a b c d)) (- (min e f)))))
