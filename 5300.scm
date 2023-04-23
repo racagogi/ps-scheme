@@ -1,0 +1,11 @@
+(define (boats n total)
+  (cond ((= n total) (print n " Go!"))
+        ((= (modulo n 6) 0) (display n) (display " Go! "))
+        (else (display n)
+              (display #\ ))))
+
+(define (iter n total)
+  (if (<= n total)
+      (begin (boats n total)
+             (iter (+ n 1) total))))
+(iter 1 (read))
