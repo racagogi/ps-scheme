@@ -1,0 +1,5 @@
+(let ((a (read))
+      (b (read)))
+  (if (>= a (- b 1))
+    (print b)
+    (print (+ a 1))))
