@@ -1,0 +1,7 @@
+(let ((a (read))
+      (b (read))
+      (c (read)))
+  (if (and (<= a c)
+           (< c b))
+    (print 1)
+    (print 0)))
