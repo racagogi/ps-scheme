@@ -1,0 +1,10 @@
+(define (timestamp d h m)
+  (+ (* 60
+        (+ (* 24 d)
+           h))
+     m))
+(let ((fin-time (timestamp (read) (read) (read)))
+      (start-time (timestamp 11 11 11)))
+  (if (< fin-time start-time)
+      (print -1)
+      (print (- fin-time start-time))))
