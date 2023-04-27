@@ -1,0 +1,7 @@
+(define (cal-capacity n m)
+  (print (quotient (* n m) 2)))
+(define (iter n)
+  (if (> n 0)
+    (begin (cal-capacity (read) (read))
+           (iter (- n 1)))))
+(iter (read))
