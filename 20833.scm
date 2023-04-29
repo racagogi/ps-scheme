@@ -1,0 +1,5 @@
+(define (iter n acc)
+  (if (> n 0)
+    (iter (- n 1) (+ acc (expt n 3)))
+    (print acc)))
+(iter (read) 0)
