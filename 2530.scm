@@ -1,0 +1,8 @@
+(define (cal-clock h m s d)
+  (modulo (+ (time->second h m s) d)
+          (time->second 24 0 0)))
+(define (time->second h m s)
+  (+ (* 3600 h) (* 60 m) s))
+(define (second->time s)
+  (print (quotient s 3600) " " (quotient (modulo s 3600) 60) " " (modulo s 60)))
+(second->time  (cal-clock (read) (read) (read) (read)))
