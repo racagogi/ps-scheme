@@ -1,0 +1,11 @@
+(define (pingpong n d p)
+  (define (match-winner)
+    (if (equal? 'D (read))
+        #t
+        #f))
+  (cond ((>= (abs (- d p)) 2) (print d ":" p))
+        ((> n 0) (if (match-winner)
+                     (pingpong (- n 1) (+ d 1) p)
+                     (pingpong (- n 1) d  (+ p 1))))
+        (else (print d ":" p))))
+(pingpong (read) 0 0)
