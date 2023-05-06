@@ -1,0 +1,8 @@
+(let ((a (read))
+      (b (read))
+      (c (read))
+      (d (read))
+      (e (read)))
+  (if (> a 0)
+    (print (* (- b a) e))
+    (print (+ d (* (abs a) c) (* b e)))))
