@@ -1,0 +1,8 @@
+(let ((a (read))
+      (b (read))
+      (c (read))
+      (d (read)))
+  (cond ((and (< c 0) (>= d 10)) (print "A storm warning for tomorrow! Be careful and stay home if possible!"))
+        ((> a c) (print "MCHS warns! Low temperature is expected tomorrow."))
+        ((> d b) (print "MCHS warns! Strong wind is expected tomorrow."))
+        (else (print "No message"))))
