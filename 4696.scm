@@ -1,0 +1,8 @@
+(do ((n (read) (read)))
+  ((= n 0))
+  (set! n (if (= n 1) 5 (/ (- (expt n 5) 1) (- n 1))))
+  (write (inexact->exact (floor n)))
+  (display ".")
+  (write (inexact->exact (modulo (floor (* n 10)) 10)))
+  (write (inexact->exact (modulo (round (* n 100)) 10)))
+  (newline))
