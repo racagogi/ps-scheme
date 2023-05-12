@@ -1,0 +1,6 @@
+(do ((t (read) (- t 1)))
+  ((= 0 t))
+  (if (> (/ (read) (read))
+         (/ (* 3.141592 (expt (read) 2)) (read)))
+    (print "Slice of pizza")
+    (print "Whole pizza")))
