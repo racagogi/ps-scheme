@@ -1,0 +1,5 @@
+(let ((n (read))
+      (s-list (string->list (symbol->string (read)))))
+  (if (eq? #\G (list-ref s-list (- n 1)))
+    (print (list->string (reverse (cdr (reverse s-list)))))
+    (print (list->string (reverse (cons #\G (reverse s-list)))))))

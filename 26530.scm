@@ -1,0 +1,13 @@
+(import (chicken foreign))
+(foreign-declare "#include<stdio.h>")
+(define cprint
+  (foreign-lambda* int ((float f))
+                   "printf(\"$%.2f\\n\",f);"))
+(let ((t (read)))
+  (do ((time t (- time 1)))
+    ((= time 0))
+    (do ((goods (read) (- goods 1))
+         (acc 0 acc))
+      ((= goods 0) (cprint acc))
+      (read)
+      (set! acc (+ acc (* (read) (read)))))))

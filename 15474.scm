@@ -1,0 +1,7 @@
+(let ((n (read))
+      (a (read))
+      (b (read))
+      (c (read))
+      (d (read)))
+  (print (min (* b (ceiling (/ n a)))
+              (* d (ceiling (/ n c))))))

@@ -1,0 +1,6 @@
+(letrec* ((b (read))
+          (p (- (* b 5) 400)))
+  (print p)
+  (cond ((> p 100) (print -1))
+        ((= p 100) (print 0))
+        (else (print 1))))

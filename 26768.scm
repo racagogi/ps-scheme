@@ -1,0 +1,11 @@
+(define (trans-char c)
+  (case c
+    ((#\a) (display 4))
+    ((#\e) (display 3))
+    ((#\i) (display 1))
+    ((#\o) (display 0))
+    ((#\s) (display 5))
+    (else (display c))))
+(do ((c (read-char) (read-char)))
+  ((eof-object? c) (newline))
+  (trans-char c))

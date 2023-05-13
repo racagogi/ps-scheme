@@ -1,0 +1,7 @@
+(let ((r (read))
+      (c (read)))
+  (do ((r r (- r 1)))
+    ((= r 0))
+    (do ((c c (- c 1)))
+      ((= c 0) (newline))
+      (display "*"))))

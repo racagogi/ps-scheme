@@ -1,0 +1,5 @@
+(let ((a (/ (read) (read)))
+      (b (/ (read) (read))))
+  (if (integer? (exact->inexact (/ (* a b) 2)))
+    (print 1)
+    (print 0)))

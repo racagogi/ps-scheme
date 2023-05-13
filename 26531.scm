@@ -1,0 +1,8 @@
+(let ((a (read))
+      (b (read))
+      (c (read))
+      (d (read))
+      (e (read)))
+  (if (= (+ a c) e)
+    (print "YES")
+    (print "NO")))

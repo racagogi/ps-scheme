@@ -1,0 +1,8 @@
+(do ((n (read) (- n 1)))
+  ((= n 0))
+  (let ((input (string->list (symbol->string (read)))))
+    (do ((iter input (cdr iter))
+         (acc 0 (+ acc 1)))
+        ((or (null? iter)
+             (eq? (car iter) #\D))
+         (print acc)))))
