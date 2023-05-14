@@ -1,0 +1,7 @@
+(do ((t (read) (- t 1)))
+  ((<= t 0))
+  (let ((target (symbol->string(read)))
+        (from (read))
+        (to (read)))
+    (print (substring target 0 from)
+           (substring target to))))

@@ -1,0 +1,7 @@
+(let ((wc (- (read) 1))
+      (hc (- (read) 1))
+      (ws (read))
+      (hs (read)))
+  (if (and (< ws wc) (< hs hc))
+    (print 1)
+    (print 0)))
