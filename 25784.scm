@@ -1,0 +1,13 @@
+(let ((a (read))
+      (b (read))
+      (c (read)))
+  (cond
+    ((or (= (+ a b) c)
+         (= (+ a c) b)
+         (= (+ c b) a))
+     (print 1))
+    ((or (= (* a b) c)
+         (= (* a c) b)
+         (= (* c b) a))
+     (print 2))
+    (else (print 3))))

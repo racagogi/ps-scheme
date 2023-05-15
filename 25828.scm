@@ -1,0 +1,8 @@
+(let ((g (read))
+      (p (read))
+      (t (read)))
+  (let ((invid (* g p))
+        (groups (+ g (* p t))))
+    (cond ((= invid groups) (print 0))
+          ((< invid groups) (print 1))
+          (else (print 2)))))

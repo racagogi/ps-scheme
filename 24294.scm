@@ -1,0 +1,5 @@
+(let ((w1 (read))
+      (h1 (read))
+      (w2 (read))
+      (h2 (read)))
+  (print (+ 4 (* 2 (+ h1 h2 (max w1 w2))))))
