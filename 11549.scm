@@ -1,0 +1,6 @@
+(do ((tea (read) tea)
+     (t 5 (- t 1))
+     (acc 0 acc))
+  ((= t 0) (print acc))
+  (if (= tea (read))
+    (set! acc (+ acc 1))))

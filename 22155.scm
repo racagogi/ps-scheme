@@ -1,0 +1,8 @@
+(do ((n (read) (- n 1)))
+  ((= n 0))
+  (let ((i (read))
+        (f (read)))
+    (if (or (and (<= i 2) (<= f 1))
+            (and (<= i 1) (<= f 2)))
+      (print "Yes")
+      (print "No"))))

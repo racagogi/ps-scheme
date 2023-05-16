@@ -1,0 +1,6 @@
+(let ((a (read))
+      (b (read))
+      (c (read)))
+  (print (* 2 (min (+ b (* 2 c))
+                   (+ c a)
+                   (+ b (* 2 a))))))

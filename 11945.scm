@@ -1,0 +1,5 @@
+(import (chicken io))
+(do ((n (read) (- n 1))
+     (m (read-line) m))
+  ((= n 0))
+  (print (list->string (reverse (string->list (read-line))))))
