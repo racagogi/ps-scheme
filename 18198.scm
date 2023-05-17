@@ -1,0 +1,13 @@
+(do ((score-a 0 score-a)
+     (score-b 0 score-b)
+     (a (if (equal? #\A (read-char)) #t #f)
+        (if (equal? #\A (read-char)) #t #f)))
+  ((and (>= (abs (- score-a score-b)) 2)
+        (>= (max score-a score-b) 11))
+   (if (> score-a score-b)
+     (print "A")
+     (print "B")))
+  (let ((score (if (equal? #\1 (read-char)) 1 2)))
+    (if a
+      (set! score-a (+ score-a score))
+      (set! score-b (+ score-b score)))))
