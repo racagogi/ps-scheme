@@ -1,1 +1,10 @@
-
+(let ((ds (read))
+      (ys (read))
+      (dm (read))
+      (ym (read)))
+  (do ((acc-s (- ys ds) acc-s)
+       (acc-m (- ym dm) acc-m))
+      ((= acc-m acc-s) (print acc-s))
+      (if (> acc-s acc-m)
+        (set! acc-m (+ acc-m ym))
+        (set! acc-s (+ acc-s ys)))))
