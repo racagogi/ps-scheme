@@ -1,0 +1,5 @@
+(import (chicken io))
+(do ((n (string->number (read-line)) (- n 1)))
+  ((= n 0))
+  (let ((line (string->list (read-line))))
+    (print (list->string (cons (char-upcase (car line)) (cdr line))))))
