@@ -1,0 +1,5 @@
+(let ((n (read)))
+  (do ((n n (- n 1))
+       (acc (* 8 (- n 1)) acc))
+   ((= n 0) (print (quotient acc 24) " " (modulo acc 24)))
+   (set! acc (+ acc (read)))))

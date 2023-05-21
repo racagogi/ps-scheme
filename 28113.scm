@@ -1,0 +1,8 @@
+(let ((n (read))
+      (a (read))
+      (b (read)))
+  (if (< a b)
+    (print "Bus")
+    (if (> a b)
+      (print "Subway")
+      (print "Anything"))))
