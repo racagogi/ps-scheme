@@ -1,0 +1,5 @@
+(let ((a (read))
+      (b (read)))
+  (do ((n (gcd a b) (- n 1)))
+    ((= n 0) (newline))
+    (display "1")))

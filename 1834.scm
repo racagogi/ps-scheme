@@ -1,0 +1,5 @@
+(let ((n (read)))
+  (do ((mod (- n 1) (- mod 1))
+       (acc 0 acc))
+    ((= mod 0) (print acc))
+    (set! acc (+ acc (+ mod (* mod n))))))
