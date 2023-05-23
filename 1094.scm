@@ -1,0 +1,8 @@
+(define (decimal->binary n)
+  (let ((target (string->list (number->string n 2))))
+    (do ((target target (cdr target))
+         (acc 0 acc))
+      ((null? target) (print acc))
+      (if (equal? #\1 (car target))
+        (set! acc (+ acc 1))))))
+(decimal->binary (read))
