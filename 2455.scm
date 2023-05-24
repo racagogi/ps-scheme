@@ -1,0 +1,5 @@
+(let ((first (- (- (read) (read))))
+      (second (- (- (read) (read))))
+      (third (- (- (read) (read))))
+      (fourth (- (- (read) (read)))))
+  (print (max first (+ first second) (+ first second third))))
