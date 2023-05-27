@@ -1,0 +1,13 @@
+(import (chicken foreign))
+(foreign-declare "#include <stdio.h>")
+(define printf (foreign-lambda* void ((float f) (c-string s))
+                                "printf(\"%.4f %s\\n\",f,s);"))
+(do ((n (read) (- n 1)))
+  ((= n 0))
+  (let ((value (read))
+        (unit (symbol->string (read))))
+    (cond
+      ((equal? unit "kg") (printf (* value 2.2046) "lb"))
+      ((equal? unit "lb") (printf (* value 0.4536) "kg"))
+      ((equal? unit "l") (printf (* value 0.2642) "g"))
+      ((equal? unit "g") (printf (* value 3.7854) "l")))))
