@@ -1,0 +1,6 @@
+(let ((a (read))
+      (d (read))
+      (k (read)))
+  (if (and (>= (* (- k a) d) 0) (= 0 (modulo (- k a) d)))
+    (print (+ 1 (quotient (- k a) d)))
+    (print "X")))
