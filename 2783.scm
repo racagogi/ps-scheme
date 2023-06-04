@@ -1,0 +1,7 @@
+(letrec* ((seven25 (/ (read) (read))))
+  (do ((n (read) (- n 1))
+       (minv seven25 minv))
+    ((= n 0) (print (exact->inexact (* minv 1000))))
+    (let ((i (/ (read) (read))))
+      (if (< i minv)
+        (set! minv i)))))
