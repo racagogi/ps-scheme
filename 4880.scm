@@ -1,0 +1,7 @@
+(do ((a (read) (read))
+     (b (read) (read))
+     (c (read) (read)))
+  ((= a b c 0))
+  (if (= (- b a) (- c b))
+    (print "AP " (+ c (- c b)))
+    (print "GP " (* c (/ c b)))))
