@@ -1,0 +1,8 @@
+(do ((n (read) (read)))
+  ((= n 0))
+  (do ((n n (- n 1))
+       (acc 1 acc))
+    ((= n 0) (print acc))
+    (let ((sf (read))
+          (cut (read)))
+         (set! acc (- (* acc sf) cut)))))
