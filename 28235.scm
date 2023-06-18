@@ -1,0 +1,6 @@
+(import (chicken io))
+(let ((code (read-line)))
+  (cond ((equal? code "SONGDO") (print "HIGHSCHOOL"))
+        ((equal? code "CODE") (print "MASTER"))
+        ((equal? code "2023") (print "0611"))
+        ((equal? code "ALGORITHM") (print "CONTEST"))))
