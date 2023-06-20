@@ -1,0 +1,7 @@
+(let ((c (read))
+      (k (read))
+      (p (read)))
+  (do ((n c (- n 1))
+       (acc 0 acc))
+    ((= n 0) (print acc))
+    (set! acc (+ acc (* k n) (* p n n)))))
