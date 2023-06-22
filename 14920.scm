@@ -1,0 +1,5 @@
+(do ((n (read) (if (even? n)
+                   (/ n 2)
+                   (+ (* 3 n) 1)))
+     (t 1 (+ t 1)))
+  ((= 1 n) (print t)))
