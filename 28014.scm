@@ -1,0 +1,8 @@
+(do ((n (read) (- n 1))
+     (last (read) last)
+     (acc 1 acc))
+  ((= n 1) (print acc))
+  (let ((next (read)))
+    (if (<= last next)
+      (set! acc (+ acc 1)))
+    (set! last next)))
