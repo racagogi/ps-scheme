@@ -1,0 +1,8 @@
+(do ((n (read) (- n 1))
+     (c 100 c)
+     (s 100 s))
+  ((= n 0) (print c) (print s))
+  (let ((a (read))
+        (b (read)))
+    (cond ((> a b) (set! s (- s a)))
+          ((< a b) (set! c (- c b))))))
