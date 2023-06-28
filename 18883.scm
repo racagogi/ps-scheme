@@ -1,0 +1,8 @@
+(let ((n (read))
+      (m (read)))
+  (do ((i 0 (+ i 1)))
+    ((= i n))
+    (do ((j (+ 1 (* m i)) (+ j 1)))
+      ((< (+ m (* m i)) j) (newline))
+      (display j)
+      (if (< j (+ m (* m i))) (display " ")))))
