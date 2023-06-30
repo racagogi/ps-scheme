@@ -1,0 +1,8 @@
+(define factorial '(1 2 6 24 120))
+(do ((n (read) (read)))
+  ((= n 0))
+  (do ((i 0 (+ i 1))
+       (acc 0 acc)
+       (d n (quotient d 10)))
+    ((= d 0) (print acc))
+    (set! acc (+ acc (* (list-ref factorial i) (modulo d 10))))))
