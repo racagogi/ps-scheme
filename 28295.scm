@@ -1,0 +1,26 @@
+(do ((n 0 (+ n 1))
+     (pos 1 pos))
+  ((= n 10) (case pos
+              ((1) (print "N"))
+              ((2) (print "E"))
+              ((3) (print "W"))
+              ((4) (print "S"))))
+  (let ((com (read)))
+    (cond ((= com 1)
+           (case pos
+              ((1) (set! pos 2))
+              ((2) (set! pos 4))
+              ((3) (set! pos 1))
+              ((4) (set! pos 3))))
+          ((= com 2)
+           (case pos
+              ((1) (set! pos 4))
+              ((2) (set! pos 3))
+              ((3) (set! pos 2))
+              ((4) (set! pos 1))))
+          ((= com 3)
+           (case pos
+              ((1) (set! pos 3))
+              ((2) (set! pos 1))
+              ((3) (set! pos 4))
+              ((4) (set! pos 2)))))))
