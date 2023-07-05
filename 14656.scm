@@ -1,0 +1,6 @@
+(let ((n (read)))
+  (do ((i 1 (+ i 1))
+       (acc 0 acc))
+      ((> i n) (print (- n acc)))
+      (if (= i (read))
+        (set! acc (+ acc 1)))))
