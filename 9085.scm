@@ -1,0 +1,5 @@
+(do ((n (read) (- n 1)))
+  ((= n 0))
+  (do ((t (read) (- t 1))
+       (acc  0 (+ (read) acc)))
+    ((= t 0) (print acc))))
