@@ -1,0 +1,5 @@
+(do ((n (read) (- n 1))
+     (defence 0 defence))
+  ((= n 0))
+  (set! defence (- 1 (* (- 1 defence) (- 1 (/ (read) 100)))))
+  (print (exact->inexact (* defence 100))))
