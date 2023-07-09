@@ -1,0 +1,5 @@
+(do ((n (read) (- n 1)))
+  ((= n 0))
+  (if (even? (read))
+    (print "even")
+    (print "odd")))
