@@ -1,0 +1,5 @@
+(do ((n (read) (- n 1))
+     (acc 0 acc))
+  ((= n 0) (print acc))
+  (let ((a (read)) (b (read)))
+   (set! acc (+ acc (modulo b a)))))
