@@ -1,0 +1,5 @@
+(let ((k (read))
+      (n (read)))
+  (if (<= n 1)
+    (print -1)
+    (print (ceiling (/ (* k n) (- n 1))))))
