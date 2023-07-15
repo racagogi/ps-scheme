@@ -1,0 +1,5 @@
+(do ((n (read) (- n 1)))
+  ((= n 0))
+  (let ((a (read))
+        (b (read)))
+    (print (expt (quotient a b) 2))))
