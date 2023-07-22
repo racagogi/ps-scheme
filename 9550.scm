@@ -1,0 +1,7 @@
+(do ((n (read) (- n 1)))
+  ((= n 0))
+  (let ((i (read))
+        (k (read)))
+    (do ((j i (- j 1))
+         (acc (quotient (read) k) (+ acc (quotient (read) k))))
+      ((= j 1) (print acc)))))
