@@ -1,0 +1,12 @@
+(define n (read))
+(do ((i 1 (+ i 1)))
+  ((< n i))
+  (let ((from (- (read) 1))
+        (to (read)))
+    (print "Scenario #" i ":")
+    (cond ((= from 0)
+           (print (/ (* to (+ to 1)) 2)))
+          (else
+           (print (- (/ (* to (+ to 1)) 2)
+                     (/ (* from (+ from 1)) 2)))))
+    (newline)))
