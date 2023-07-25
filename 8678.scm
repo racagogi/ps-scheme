@@ -1,0 +1,7 @@
+(do ((n (read) (- n 1)))
+  ((= n 0))
+  (let ((a (read))
+        (b (read)))
+    (if (= 0 (modulo b a))
+      (print "TAK")
+      (print "NIE"))))
