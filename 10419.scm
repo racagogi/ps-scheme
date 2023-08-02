@@ -1,0 +1,5 @@
+(do ((n (read) (- n 1)))
+  ((= n 0))
+  (let ((t (read)))
+    (do ((i 0 (+ i 1)))
+      ((> (+ i (* i i)) t) (print (- i 1))))))
