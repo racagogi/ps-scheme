@@ -1,0 +1,8 @@
+(let ((a (read))
+      (b (read))
+      (c (read)))
+  (let ((sum (+ a b c))
+        (maxv (max a b c)))
+    (if (> (- sum maxv) maxv)
+      (print sum)
+      (print (- (* 2 (- sum maxv)) 1)))))
