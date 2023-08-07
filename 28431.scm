@@ -1,0 +1,11 @@
+(let ((a (read))
+      (b (read))
+      (c (read))
+      (d (read))
+      (e (read)))
+  (cond
+        ((or (and (= b c) (= d e)) (and (= b d) (= c e))) (and (= b e) (= c d)) (print a))
+        ((or (and (= a c) (= d e)) (and (= a d) (= c e))) (and (= a e) (= c d)) (print b))
+        ((or (and (= a b) (= d e)) (and (= a d) (= b e))) (and (= a e) (= b d)) (print c))
+        ((or (and (= a b) (= c e)) (and (= a c) (= b e))) (and (= a e) (= b c)) (print d))
+        ((or (and (= a b) (= c d)) (and (= a c) (= b d))) (and (= a d) (= b c)) (print e))))
