@@ -1,0 +1,5 @@
+(let ((a (+ (* 3 (read)) (* 20 (read)) (* 120 (read))))
+      (b (+ (* 3 (read)) (* 20 (read)) (* 120 (read)))))
+  (cond ((> a b) (print "Max"))
+        ((< a b) (print "Mel"))
+        (else (print "Draw"))))
