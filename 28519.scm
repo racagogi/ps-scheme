@@ -1,0 +1,5 @@
+(let ((a (read))
+      (b (read)))
+  (cond ((> a b) (print (+ (* 2 b) 1)))
+        ((= a b) (print (* 2 a)))
+        (else (print (+ (* 2 a) 1)))))
