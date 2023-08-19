@@ -1,0 +1,7 @@
+(do ((n (read) (- n 1)))
+  ((= n 0) (newline))
+  (let ((i (read)))
+    (cond ((< i 250) (display "4 "))
+          ((< i 275) (display "3 "))
+          ((< i 300) (display "2 "))
+          (else (display "1 ")))))
